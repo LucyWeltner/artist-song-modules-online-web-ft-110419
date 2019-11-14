@@ -23,4 +23,7 @@ class Artist
   def add_songs(songs)
     songs.each { |song| add_song(song) }
   end
+  
+  extend Memorable::Class_methods
+  include Memorable::Instance_methods 
 end
